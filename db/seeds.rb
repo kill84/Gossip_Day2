@@ -35,7 +35,7 @@ end
 end
 
 20.times do
-  gossip = Gossip.create!(title: Faker::Lorem.word, content: Faker::Lorem.sentence(word_count:10, supplemental: true, random_words_to_add: 5), user: users.sample)
+  gossip = Gossip.create!(title: Faker::Lorem.characters(number:3..14), content: Faker::Lorem.sentence(word_count:10, supplemental: true, random_words_to_add: 5), user: users.sample)
   gossips << gossip
 end
 

@@ -17,7 +17,16 @@
         <div class="card-footer text-muted">
         Créé le : <%= @gossipfind.created_at %>
         </div>
+
+        <% if flash[:notice] %>
+        <div class="alert alert-success">
+        <strong>Bravo !</strong> Ton gossip a bien été posté.
         </div>
+        <% end %>
+
+        </div>
+
+
 
 </body>
 </html>
